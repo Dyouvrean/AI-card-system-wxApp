@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<navigation-bar title="智能工牌" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+ <view id="title">工牌介绍</view>
+  <button>
+   <image id="infob" src="../images/badge-info.png"></image>
+  </button>
+ <image src="../images/2.png"></image>
+ <image src="../images/1.png"></image>
+</scroll-view>
