@@ -16,7 +16,7 @@ button{
 padding: 0;
 display: inline-block;
 float: right;
-padding-right: 20%;
+right: 20%;
 height: 20px ;
 width:20px !important;
 }
