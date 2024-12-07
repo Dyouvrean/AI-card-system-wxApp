@@ -3,6 +3,6 @@
 <Top-bar></Top-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
  <view id="title">工牌介绍</view>
- <image src="../images/2.png"></image>
- <image src="../images/1.png"></image>
+ <image mode="widthFix" src="../images/2.png"></image>
+ <image  mode="widthFix" src="../images/1.png"></image>
 </scroll-view>
