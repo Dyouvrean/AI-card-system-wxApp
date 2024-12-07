@@ -1,9 +1,6 @@
 <!--index.wxml-->
 <navigation-bar title="智能工牌" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<Top-bar></Top-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
- <view id="title" bind:tap="goMain">主页</view>
-  <button bind:tap="goInfo">
-   <image id="infob" src="../images/badge-info.png"></image>
-  </button>
 
 </scroll-view>

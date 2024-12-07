@@ -1,0 +1,18 @@
+/* components/Top-bar.wxss */
+view{
+  text-align: center;
+  display: inline-block;
+}
+button{
+  padding: 0;
+  display: inline-block;
+  float: right;
+  right: 20%;
+  height: 20px ;
+  width:20px !important;
+  }
+  
+  .infob{
+  width: 20px;
+  height:20px;
+  }

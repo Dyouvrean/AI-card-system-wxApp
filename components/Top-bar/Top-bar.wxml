@@ -1,0 +1,5 @@
+<!--components/Top-bar.wxml-->
+<view id="title" bind:tap="goMain">主页</view>
+<button bind:tap="goInfo">
+   <image class="infob" src="../../images/badge-info.png"></image>
+</button>
