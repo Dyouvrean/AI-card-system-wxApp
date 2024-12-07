@@ -2,6 +2,7 @@
 <navigation-bar title="智能工牌" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
  <view id="title">工牌介绍</view>
+ <view id="title" bind:tap="goMain">主页</view>
   <button>
    <image id="infob" src="../images/badge-info.png"></image>
   </button>

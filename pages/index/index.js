@@ -5,6 +5,11 @@ goInfo(){
   wx.navigateTo({
     url: '/pages/badgeInfo/badgeInfo'
   })
- 
-}
+} ,
+goMain(){
+  console.log(2)
+  wx.navigateTo({
+    url: '/pages/index/index'
+  })
+} 
 })
