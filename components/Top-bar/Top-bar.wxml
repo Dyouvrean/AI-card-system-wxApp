@@ -1,5 +1,8 @@
 <!--components/Top-bar.wxml-->
+<button class="leftb" bind:tap="goInfo">
+  <image class="badgemore" src="../../images/badge-more.png"></image>
+</button>
 <view id="title" bind:tap="goMain">主页</view>
-<button bind:tap="goInfo">
-   <image class="infob" src="../../images/badge-info.png"></image>
+<button class="rightb" bind:tap="goInfo">
+  <image class="infob" src="../../images/badge-info.png"></image>
 </button>

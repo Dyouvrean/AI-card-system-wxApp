@@ -2,8 +2,9 @@
 view{
   text-align: center;
   display: inline-block;
+  left:30%;
 }
-button{
+.rightb{
   padding: 0;
   display: inline-block;
   float: right;
@@ -11,8 +12,19 @@ button{
   height: 20px ;
   width:20px !important;
   }
-  
+.leftb{
+    padding: 0;
+    display: inline-block;
+    float: left;
+    left:20%;
+    height: 20px ;
+    width:20px !important;
+    }
   .infob{
   width: 20px;
   height:20px;
+  }
+  .badgemore{
+    width: 20px;
+    height:20px;
   }
