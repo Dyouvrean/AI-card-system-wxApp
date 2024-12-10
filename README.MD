@@ -8,3 +8,6 @@
     * register component `usingComponents:{}`
 * Make image resize 
   *  `mode="widthFix"`
+* left side slide menu
+  * wxs  
+  * refer to [link](https://www.cnblogs.com/skuld-yi/p/15077427.html)

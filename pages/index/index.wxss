@@ -9,3 +9,10 @@ page {
   overflow-y: hidden;
 }
 
+.drawer {
+  height: 100vh;
+  width: 150px;
+  position: absolute;
+  transition: transform 0.4s ease;	/* 位移使用transform实现，加个过渡动画更顺滑 */
+  left: -150px;		/* width、偏移与WXML中的数值保持一致，初始状态隐藏菜单 */
+}

@@ -1,0 +1,52 @@
+var startmark = 0;
+var status = 0;		// 菜单开闭状态
+var JUDGEPOINT = 0.7;
+
+function touchStart(e, ins) {
+  var pageX = (e.touches[0] || e.changedTouches[0]).pageX;
+  startmark = pageX;
+}
+
+function touchMove(e, ins) {
+  var pageX = (e.touches[0] || e.changedTouches[0]).pageX;
+  var offset = pageX - startmark;
+  var drawerComp = ins.selectComponent('.drawer');
+  var drawerWidth = drawerComp.getDataset().drawerwidth;
+
+  if (offset > 0 && status == 0) {
+    setCompTransX(drawerComp, Math.min(drawerWidth, offset))
+  } else if (offset < 0 && status == 1) {
+    setCompTransX(drawerComp, Math.max(0, offset))
+  }
+}
+
+function touchEnd(e, ins) {
+  var pageX = (e.touches[0] || e.changedTouches[0]).pageX;
+  var offset = pageX - startmark;
+  var drawerComp = ins.selectComponent('.drawer');
+  var drawerWidth = drawerComp.getDataset().drawerwidth;
+
+  if (offset > 0 && status == 0) {
+    if (offset < drawerWidth * JUDGEPOINT) {
+      setCompTransX(drawerComp, 0);
+    } else {
+      setCompTransX(drawerComp, drawerWidth);
+      status = 1;
+    }
+  } else if (offset < 0) {
+    setCompTransX(drawerComp, 0);
+    status = 0;
+  }
+}
+
+function setCompTransX(comp, x) {
+  comp.setStyle({
+    transform: 'translateX(' + x + 'px)',
+  })
+}
+
+module.exports = {
+  touchstart: touchStart,
+  touchmove: touchMove,
+  touchend: touchEnd
+}
