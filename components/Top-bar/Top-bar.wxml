@@ -1,5 +1,5 @@
 <!--components/Top-bar.wxml-->
-<button class="leftb" bind:tap="goInfo">
+<button class="leftb" wx:if="{{showButton}}">
   <image class="badgemore" src="../../images/badge-more.png"></image>
 </button>
 <view id="title" bind:tap="goMain">主页</view>

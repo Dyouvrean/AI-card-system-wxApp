@@ -7,14 +7,16 @@ Component({
    * Component properties
    */
   properties: {
-
+    showButton: {
+      type: Boolean,
+      value: false // 默认值
+  }
   },
 
   /**
    * Component initial data
    */
   data: {
-
   },
 
   /**

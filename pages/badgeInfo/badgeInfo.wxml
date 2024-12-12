@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <navigation-bar title="智能工牌" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<Top-bar></Top-bar>
+<Top-bar showButton="{{false}}"></Top-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
  <view id="title">工牌介绍</view>
  <image mode="widthFix" src="../../images/2.png"></image>
