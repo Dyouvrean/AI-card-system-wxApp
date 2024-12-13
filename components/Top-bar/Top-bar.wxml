@@ -1,5 +1,5 @@
 <!--components/Top-bar.wxml-->
-<button class="leftb" wx:if="{{showButton}}">
+<button class="leftb" wx:if="{{showButton}}" bindtap="onToggleDrawer">
   <image class="badgemore" src="../../images/badge-more.png"></image>
 </button>
 <view id="title" bind:tap="goMain">主页</view>

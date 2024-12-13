@@ -34,6 +34,9 @@ Component({
       wx.navigateTo({
         url: '/pages/index/index'
       })
+    },
+    onToggleDrawer(){
+      this.triggerEvent('toggleMenu'); // 向父组件发送事件
     } 
   }
 })

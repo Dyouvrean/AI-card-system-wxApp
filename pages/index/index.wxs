@@ -5,6 +5,7 @@ var JUDGEPOINT = 0.7;
 function touchStart(e, ins) {
   var pageX = (e.touches[0] || e.changedTouches[0]).pageX;
   startmark = pageX;
+  console.log(ins.data)
 }
 
 function touchMove(e, ins) {
@@ -43,6 +44,7 @@ function setCompTransX(comp, x) {
   comp.setStyle({
     transform: 'translateX(' + x + 'px)',
   })
+  
 }
 
 module.exports = {

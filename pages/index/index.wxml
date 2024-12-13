@@ -1,9 +1,11 @@
 <!--index.wxml-->
 <wxs module="drawer" src="./index.wxs"></wxs>
 <navigation-bar title="智能工牌" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<Top-bar showButton="{{true}}"></Top-bar>
-<scroll-view class="scrollarea" scroll-y type="list" bindtouchstart="{{drawer.touchstart}}" bindtouchmove="{{drawer.touchmove}}" bindtouchend="{{drawer.touchend}}">
-<view class="drawer" data-drawerwidth="150">
+<Top-bar showButton="{{true}}" bind:toggleMenu="toggleDrawer"></Top-bar>
+<scroll-view class="scrollarea" scroll-y type="list"  bind:touchstart="onTouchStart"
+  bind:touchmove="onTouchMove" bind:touchend="onTouchEnd">
+
+<view class="drawer" data-drawerwidth="150" style="transform: translateX({{drawerOffset}}px); transition: transform 0.4s ease;">
     <view class="drawer-item">Devices</view>
     <view wx:for="{{sideslipMenuArr}}" class="drawer-item" >
       <text>Devices {{item}}</text>
