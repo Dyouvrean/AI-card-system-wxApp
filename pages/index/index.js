@@ -5,6 +5,14 @@ Page({
     drawerOffset: 0,
     drawerWidth: 150, // Width of the drawer
     isDrawerOpen: false, // Drawer state
+    messages: [
+      { id: 1, sender: 'user', text: 'Hello, what is this about?' },
+      { id: 2, sender: 'system', text: 'This is an example chat application.' },
+      { id: 3, sender: 'user', text: 'Can I customize it?' },
+      { id: 4, sender: 'system', text: 'Yes, you can modify it as needed.' },
+      { id: 5, sender: 'user', text: 'Thank you!' },
+      { id: 6, sender: 'system', text: 'You are welcome!' }
+    ]
   },
   toggleDrawer:function(event){
     const { drawerOffset, drawerWidth } = this.data;

@@ -26,3 +26,30 @@
      * in parent component,declare `toggleDrawer`,can get data from chlid through `event`
      * For child component,send event to parent component `this.triggerEvent('toggleMenu')`
      * [reference](https://cloud.tencent.com/developer/article/1744959)
+* Chat interface with alternating user and system messages.
+  * Alternating User and System Messages
+    * The `data` object in `index.js` defines messages with a `sender` property (`user` or `system`) and `text` content.
+      *  Data in `index.js
+      ```javascript
+          Page({
+            data: {
+              messages: [
+                { id: 1, sender: 'user', text: 'Hello, what is this about?' },
+                { id: 2, sender: 'system', text: 'This is an example chat application.' },]}
+          });
+          ```
+    * Using `wx:for` in WXML, messages are dynamically rendered from the `messages` array.
+    * Conditional CSS styling ensures different alignment for user and system messages:
+      - `message.user` aligns the icon to the **left** of the text.
+      - `message.system` aligns the icon to the **right** of the text using the `order` property in Flexbox.
+  * System Icons on the Right
+    * ``` css
+      .message.system .icon {order: 1;} 
+      ```
+
+
+
+
+
+
+

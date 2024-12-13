@@ -21,3 +21,45 @@ page {
   display: grid;
   font-size: large;
 }
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 50%; /* Make the image circular */
+}
+
+.icon.system {
+  order: 1;
+
+}
+
+.message.system .text {
+  background-color: #aaf0d1;
+  padding: 8px;
+  border-radius: 15px;
+}
+.message.user {
+  justify-content: flex-start;
+}
+.message.system {
+  justify-content: flex-end;
+}
+.message {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 2px;
+  
+}
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #fffff2;
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}

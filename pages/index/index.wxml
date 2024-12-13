@@ -4,6 +4,17 @@
 <Top-bar showButton="{{true}}" bind:toggleMenu="toggleDrawer"></Top-bar>
 <scroll-view class="scrollarea" scroll-y type="list"  bind:touchstart="onTouchStart"
   bind:touchmove="onTouchMove" bind:touchend="onTouchEnd">
+  <view class="chat-container">
+  <view class="chat-box">
+    <block wx:for="{{messages}}" wx:key="id">
+      <view class="message {{item.sender}}">
+        <image class="icon {{item.sender}}"src="{{item.sender === 'user' ? '../../images/role-a.png' : '/images/role-b.png'}}" ></image>
+        <view class="text">{{item.text}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+
 
 <view class="drawer" data-drawerwidth="150" style="transform: translateX({{drawerOffset}}px); transition: transform 0.4s ease;">
     <view class="drawer-item">Devices</view>
